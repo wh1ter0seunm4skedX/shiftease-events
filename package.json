@@ -31,8 +31,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build --repo=https://github.com/wh1ter0seunm4skedX/shiftease-events.git",
+    "deploy": "npm run build",
     "test": "react-scripts test"
   },
   "eslintConfig": {

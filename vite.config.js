@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/shiftease-events/',
   build: {
-    outDir: 'build'
+    outDir: 'docs'
   }
 })
