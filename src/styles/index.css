@@ -206,3 +206,33 @@ html {
 .rtl .space-x-1, .rtl .space-x-2, .rtl .space-x-3, .rtl .space-x-4 {
   --tw-space-x-reverse: 1;
 }
+
+@keyframes floating-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.floating-gradient {
+  background: linear-gradient(135deg, #fde68a, #fbcfe8, #ffffff);
+  background-size: 220% 220%;
+  animation: floating-gradient 14s ease-in-out infinite;
+}
+
+@keyframes float-drift {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(12px, -14px) scale(1.05); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.float-slow {
+  animation: float-drift 12s ease-in-out infinite;
+}
+
+.float-slower {
+  animation: float-drift 16s ease-in-out infinite;
+}
+
+.float-slowest {
+  animation: float-drift 20s ease-in-out infinite;
+}
